@@ -17,10 +17,15 @@ load_dotenv()
 st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
 st.header("AI Chatbot Demo")
 
-OPENAI_API_KEY=os.environ["OPENAI_API_KEY"]
-pc_environment=os.environ["PINECONE_ENV"]
-pc_api_key=os.environ["PINECONE_API_KEY"]
-pc_index=os.environ["PINECONE_INDEX_NAME"]
+#OPENAI_API_KEY=os.environ["OPENAI_API_KEY"]
+#pc_environment=os.environ["PINECONE_ENV"]
+#pc_api_key=os.environ["PINECONE_API_KEY"]
+#pc_index=os.environ["PINECONE_INDEX_NAME"]
+
+OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+pc_environment=os.getenv("PINECONE_ENV")
+pc_api_key=os.getenv("PINECONE_API_KEY")
+pc_index=os.getenv("PINECONE_INDEX_NAME")
 
 embeddings = OpenAIEmbeddings()
 

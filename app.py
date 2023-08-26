@@ -40,10 +40,10 @@ embeddings = OpenAIEmbeddings()
 #pinecone.create_index("index name here", dimension=1536, metric="cosine") # 1536 dim of text-embedding-ada-002
 
 # initialize pinecone
-#pinecone.init(
-#        api_key=pc_api_key,  # find api key in console at app.pinecone.io
-#        environment=pc_environment  # find next to api key in console
-#)
+pinecone.init(
+        api_key=pc_api_key,  # find api key in console at app.pinecone.io
+        environment=pc_environment  # find next to api key in console
+)
 
 # create a loader
 #loader = PyPDFLoader("valuation.pdf")

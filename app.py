@@ -10,11 +10,16 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain
 from langchain import PromptTemplate, LLMChain
-
+from pathlib import Path
+from time import sleep
 from langchain.document_loaders import UnstructuredPDFLoader, OnlinePDFLoader, PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 load_dotenv()
+
+css_file = "main.css"
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
 st.header("AI Doc-Chatbot Demo")

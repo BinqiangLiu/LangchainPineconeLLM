@@ -2,6 +2,6 @@ langchain
 openai
 streamlit
 streamlit-chat
+python-dotenv
 pinecone-client
-tiktoken
-pinecone-client
+#tiktoken

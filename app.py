@@ -22,10 +22,15 @@ st.header("AI Chatbot Demo")
 #pc_api_key=os.environ["PINECONE_API_KEY"]
 #pc_index=os.environ["PINECONE_INDEX_NAME"]
 
-OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
-pc_environment=os.getenv("PINECONE_ENV")
-pc_api_key=os.getenv("PINECONE_API_KEY")
-pc_index=os.getenv("PINECONE_INDEX_NAME")
+#OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+#pc_environment=os.getenv("PINECONE_ENV")
+#pc_api_key=os.getenv("PINECONE_API_KEY")
+#pc_index=os.getenv("PINECONE_INDEX_NAME")
+
+OPENAI_API_KEY=os.environ.get("OPENAI_API_KEY")
+pc_environment=os.environ.get("PINECONE_ENV")
+pc_api_key=os.environ.get("PINECONE_API_KEY")
+pc_index=os.environ.get("PINECONE_INDEX_NAME")
 
 embeddings = OpenAIEmbeddings()
 

@@ -89,7 +89,7 @@ def get_text():
     return input_text
 
 user_input = get_text()
-
+output=""
 if user_input:
 #   output = chain.run(input=user_input)
     sms_docs=docsearch.similarity_search(user_input)

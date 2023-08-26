@@ -4,4 +4,4 @@ streamlit
 streamlit-chat
 python-dotenv
 pinecone-client
-#tiktoken
+tiktoken

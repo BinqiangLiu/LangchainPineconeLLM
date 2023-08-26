@@ -17,7 +17,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
+st.set_page_config(page_title="LangChain+Pincecone+LLM", layout="wide", page_icon=":robot:")
 
 css_file = "main.css"
 with open(css_file) as f:

@@ -17,7 +17,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
-st.header("AI Chatbot Demo")
+st.header("AI Doc-Chatbot Demo")
+st.write("For current App version: Docs are pre-embedded and stored on Pinecone.")
 
 #OPENAI_API_KEY=os.environ["OPENAI_API_KEY"]
 #pc_environment=os.environ["PINECONE_ENV"]

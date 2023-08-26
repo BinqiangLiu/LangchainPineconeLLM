@@ -2,8 +2,10 @@ import streamlit as st
 from streamlit_chat import message
 import pinecone
 import os
+import openai
 from langchain.chains import ConversationChain
 from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain

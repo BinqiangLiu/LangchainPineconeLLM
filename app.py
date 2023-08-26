@@ -17,11 +17,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 load_dotenv()
 
+st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
+
 css_file = "main.css"
 with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
-st.set_page_config(page_title="LangChain+Pincecone+LLM", page_icon=":robot:")
 st.header("AI Doc-Chatbot Demo")
 st.write("For current App version: Docs are pre-embedded and stored on Pinecone.")
 
